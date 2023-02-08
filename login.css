@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(abstract-blur-defocused-shopping-mall.jpg);
+    background-size: cover;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box1{
+    border-radius: 35px;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919be;
+    text-align: center;
+}
+.box1 input[type="text"],.box1 input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498DB;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+.box1 input[type="text"]:focus,.box1 input[type="password"]:focus{
+    width: 270px;
+    border-color:turquoise;
+}
+.box1 input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #23cc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+.box1 input[type="submit"]:hover{
+    background:#23cc71 ;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+.radio h1{
+    font-size: 15px;
+}
