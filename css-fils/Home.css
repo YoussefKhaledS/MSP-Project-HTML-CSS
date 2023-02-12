@@ -1,4 +1,3 @@
-/* golobal rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -324,20 +323,54 @@ header ul .enter a:first-child {
   color: var(--sale-color);
 }
 /* sale end */
+
+/*about us and contact us container  */
+
+.about-us-contact-us-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  grid-template-areas: "about-us contact-us";
+  padding: 2px;
+  column-gap: 3px;
+  background-color: #e3e6f3;
+  width: 100%;
+  height: 75vh;
+  perspective: 100rem;
+  position: relative;
+}
+
+@media (max-width: 1083px) {
+  #about {
+    display: none;
+  }
+  #contact {
+    width: 100%;
+    position: static;
+  }
+}
+/*end of about us and contact us container  */
+
 /* about us start */
 #about {
   margin-top: var(--main-margin-top);
   background-color: var(--main-color);
-  height: 30vh;
   padding: var(--main-margin-top) 0;
   overflow: hidden;
+  grid-area: about-us;
+  transform: rotateY(15deg);
+  background-color: white;
+  box-shadow: 0.3rem 0.3rem 0.4rem #ccc, -0.1rem -0.1rem 0.4rem #ccc;
+  position: absolute;
+  left: 40px;
+  top: -20px;
 }
 #about h1 {
   color: rgb(95, 95, 95);
   text-align: center;
 }
 #about hr {
-  border: solid 2px cadetblue;
+  border: solid 2px #e3e6f3;
 }
 #about div {
   line-height: 2;
@@ -348,36 +381,30 @@ header ul .enter a:first-child {
 /* contact us start */
 #contact {
   margin: var(--main-margin-top) 0px;
-}
-#contact > div {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 786px) {
-  #contact > div {
-    width: 100%;
-    align-items: center;
-  }
+  grid-area: contact-us;
+  width: 600px;
+  position: absolute;
+  right: 50px;
+  top: -40px;
+  padding: 5px;
 }
 #contact h1 {
-  font-weight: 400;
+  color: rgb(95, 95, 95);
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 15px;
+}
+
+#contact > div {
+  display: flex;
+  flex-direction: column;
 }
 #contact hr {
   border: solid 1px #d9d9d9;
 }
 #contact form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 80vh;
-}
-#contact .channel {
-}
-#contact [for="E"] {
-  margin-right: 35px;
-}
-#contact .name {
+  margin: 5px;
 }
 #contact [type="text"],
 #contact [type="number"] {
@@ -386,26 +413,43 @@ header ul .enter a:first-child {
   border-bottom: solid 1px #818181;
   font-size: 16px;
   outline: none;
+  width: 200px;
+  margin: 7px;
+  background-color: #e3e6f3;
   -webkit-appearance: none;
 }
 #contact .notRobot {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
-  width: 80%;
-  border: 1px solid #d3d3d3;
+  width: 35%;
+  border-radius: 5px;
   background: #f9f9f9;
   align-items: center;
-  padding: 15px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 15px;
+  height: 55px;
+  margin-left: 5px;
+}
+
+#contact .notRobot img {
+  width: 25px;
+  height: 25px;
 }
 #contact [type="submit"] {
   width: 110px;
   height: 40px;
   font-size: 18px;
+  font-weight: 500;
   border: none;
   background: black;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
+}
+#contact #message {
+  margin: 10px;
+  background-color: #e3e6f3;
+  border-radius: 5px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
