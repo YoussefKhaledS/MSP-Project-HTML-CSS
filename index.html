@@ -22,39 +22,55 @@
   <body>
     <!-- header -->
     <header>
-      <div class="container">
-        <div class="logo">
-          <img src="image/logo.png" alt="logo" />
+        <div class="container">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo" />
+            </div>
+            <!-- menu bar icon -->
+            <i class="fa-solid fa-bars"></i>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Products</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="shop_gaming.html">Gaming</a></li>
+                            <li><a href="shop_electronics.html">Electronics</a></li>
+                            <li><a href="Shop_clothes.html">Clothes</a></li>
+                            <li><a href="Shop_shoes.html">Shoes</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- rest of links -->
+
+                <li class="enter">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Regester</a>
+                </li>
+
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
         </div>
-        <!-- menu bar icon -->
-        <i class="fa-solid fa-bars"></i>
-
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-
-          <!-- rest of links -->
-
-          <li class="enter">
-            <a href="">Login</a>
-            <a href="">Regester</a>
-          </li>
-
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
-        </ul>
-      </div>
     </header>
     <!-- end header -->
 
     <!-- menu bar items -->
     <div class="menu-items">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="">Login</a>
-      <a href="">Regester</a>
-      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#home">Home</a>
+        <div class="products">
+            <i class="fa-solid fa-laptop-medical" onclick="elec()"></i>
+            <i class="fa-solid fa-shirt" onclick="cloth()"></i>
+            <i class="fa-solid fa-gamepad" onclick="game()"></i>
+            <i class="fa-solid fa-shoe-prints" onclick="shoes()"></i>
+        </div>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Regester</a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
     <!-- end of menu bar items -->
 
