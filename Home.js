@@ -47,3 +47,16 @@ const menu_items = document.querySelector(".menu-items");
 menu_icon.addEventListener("click", () => {
   menu_items.classList.toggle("change");
 });
+
+function cloth(){
+  location.replace("Shop_clothes.html")
+}
+function elec(){
+  location.replace("shop_electronics.html")
+}
+function game(){
+  location.replace("shop_gaming.html")
+}
+function shoes(){
+  location.replace("Shop_shoes.html")
+}
