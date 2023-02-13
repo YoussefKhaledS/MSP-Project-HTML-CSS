@@ -12,6 +12,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Qwitcher Grypen", cursive;
   font-family: "Work Sans", sans-serif;
+  /* loading */
+    overflow: hidden;    
+   /* loading */
 }
 html {
   scroll-behavior: smooth;
