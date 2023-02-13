@@ -1,0 +1,108 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --main-color: #e3e6f3;
+}
+
+.cart-items {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 1px 6px 0px #9c9c9c;
+    border: 2px solid var(--main-color);
+    z-index: 10;
+    transition: .1s;
+    display: none;
+}
+
+.cart-items .cart .title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.cart .content .cart-box{
+    display: grid;
+    grid-template-columns:40% 40% 20%;
+    grid-template-rows: 140px;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--main-color);
+    padding: 3px;
+}
+.cart .content .cart-box img{
+    width: 90%;
+    height: 90%;
+    padding-left: 10px;
+}
+.cart .content .cart-box .details-box{
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+}
+.cart .content .cart-box .details-box .box-title{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.cart .content .cart-box .details-box .price{
+    font-weight: 600;
+    margin-top: -6px;
+}
+.cart .content .cart-box .details-box .quantity{
+    border: 2px solid var(--main-color);
+    width: 15%;
+}
+.cart .content .cart-box .remove{
+    font-size: 24px;
+    /* cursor: pointer;s */
+}
+.cart-items .total{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top:2px solid var(--main-color) ;
+}
+.cart-items .total .totel-title{
+    font-weight: 600;
+    margin-right:10px ;
+}
+.cart-items .btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--main-color);
+    display: flex;
+    margin-left: 150px;
+}
+.cart-items .btn:hover{
+    background-color: rgba(186, 186, 199, 0.801);
+}
+.cart .close{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.active{
+    display: block;
+}
+
