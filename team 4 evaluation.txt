@@ -1,0 +1,70 @@
+1 - Home Page :
+	=> HTML :
+		+ code is very well structured
+		+ code is well commented
+		- semantic tags are not used -- 
+		- commented code should be removed before pushing the code to github
+	=> CSS :
+		+ using variables in code 
+		+ code is well commented
+		+ applying reasonable margin - padding to elements
+		-> (in new design section)
+		 	+ using grid to move elements
+		 	- (in .clothes.block) don't use large fixed height for elements, consider using images with same dimensions to avoid bad code reviews 
+		-> (in sale section) 
+			+ proper use of transform property
+			+ using grid to move elements
+			- (about-us-contact-us-container) is not responsive , grid-template-columns should be adjusted in mobile view	
+			- (in #about) large elements shouldn't be moved by position absolute, consider using container with lower width instead
+			- (in #contact) don't give larage fixed width to elements (as 600px) , don't move large elements with position absolute  
+		+ overall design implementation is great
+	=> JS : 
+		+ Creating a Slider ++
+					
+========================================================================================
+
+2 - Shop Pages* :
+	=> HTML :
+		+ code is very well structured
+		+ semantic tags are used properly 
+		+ code is well commented
+	=> CSS :
+		+ using variables in code 
+		+ using some sudo[elements-classes]
+		+ applying reasonable margin and padding to elements
+		+ using flex to move elements
+		+ applying animations ++
+		+ mobile view is great ++
+		- code is not commented
+		
+========================================================================================	
+
+3 - Login & Register Pages :
+	=> HTML :
+		+ code is very well structured
+		+ semantic tags are used properly 
+		+ validation is applied on input fields 
+	=> CSS :
+		+ using selectors other than classes and id
+		- not using variables in code 	
+ 		- giving fixed width,height to elements will cause issues in responsive views
+ 		- centering the form with position absolute caused it to float out of the body, better to use flex here
+ 		- giving background image to the whole body is not right, instead use a div with 100vh and giv it background image
+ 		- code is not commented
+	=> JS :
+		+ using local storage to store users ++	
+		
+========================================================================================
+
+4 - Nav-bar : 
+	+ code is very well structured, responsive 
+	
+========================================================================================			
+		
+Overall Feedback:  
+	+ great teamwork  
+	+ most of the team members participated 
+	+ project discussion went great , each one of you described their role properly 
+	
+Evaluation : HTML : 6/8 (for not using semantic tags)    CSS : 12/15   bonus: 6/16   total : 24			
+
